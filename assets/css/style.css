@@ -1,0 +1,101 @@
+/* ^ General Style */
+/* #region General Style */
+
+:root {
+  --main-color: #80b500;
+}
+
+body {
+  font-family: "Rajdhani", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* #endregion */
+
+/* ^ Section: Latest Blog */
+/* #region Latest Blog*/
+.blog-card {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+}
+.blog-card .icon,
+.blog-card .read-more {
+  color: var(--main-color);
+}
+
+.blog-card figure {
+  overflow: hidden;
+}
+.blog-card img {
+  transition: transform 0.5s;
+}
+.blog-card:hover img {
+  transform: scale(1.1);
+}
+
+.blog-card-title,
+.by-admin,
+.services {
+  transition: color 0.5s;
+}
+.blog-card-title:hover,
+.by-admin:hover,
+.services:hover {
+  color: var(--main-color);
+}
+
+.latest-blog .owl-carousel .owl-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  /* background: rgba(220, 3, 3, 0.808); */
+}
+
+.latest-blog .owl-nav div {
+  position: absolute;
+  top: 40%;
+  background: transparent !important;
+  border-radius: 100% !important;
+  border: 1px solid rgba(128, 128, 128, 0.341);
+  opacity: 0;
+  transition: background 0.5s, left 0.5s, right 0.5s, opacity 0.5s;
+}
+.latest-blog .owl-nav div i {
+  display: inline-block;
+  font-size: 25px;
+  height: 20px;
+  color: black;
+  transition: color 0.5s;
+}
+
+.latest-blog .owl-nav .owl-prev {
+  left: 50px;
+}
+.latest-blog .owl-nav .owl-next {
+  right: 50px;
+}
+
+.latest-blog .owl-nav div:hover {
+  background: var(--main-color) !important;
+}
+.latest-blog .owl-nav div:hover i {
+  color: white;
+}
+
+.latest-blog .owl-carousel:hover .owl-nav .owl-prev {
+  left: -5px;
+  opacity: 1;
+}
+.latest-blog .owl-carousel:hover .owl-nav .owl-next {
+  right: -5px;
+  opacity: 1;
+}
+.blog-card-title {
+  height: 60px;
+}
+/* #endregion */
